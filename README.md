@@ -1,0 +1,1 @@
+# chrome-extends-easy-drafter
