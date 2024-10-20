@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "easy_drafter",
+  "version": "1.0",
+  "description": "A simple Chrome extension",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/jquery-3.7.1.js", "js/content.js"]
+    }
+  ]
+}
